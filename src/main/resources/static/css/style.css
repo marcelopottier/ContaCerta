@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+aside {
+    width: 25%;
+    border-right: 1px solid #eeeeee;
+}
+
+h2 {
+    display: inline-block;
+    margin: 1em;
+    font-weight: normal;
+}
+
+aside nav .nav-links {
+    border-radius: 3px;
+}
+
+aside nav .nav-links a.active {
+    background-color: #f85f1e;
+    color: #ffffff;
+}
+
+aside nav .nav-links a {
+    float: none;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    color: #161616;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+section {
+    width: 75%;
+}
+
+section h3 {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 10px;
+    padding: 0;
+}
+
+section p {
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.container .info-item {
+    width: 31.2%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px;
+}
+
+.container .graph-item:first-child {
+    width: 55%;
+}
+
+.container .graph-item {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px;
+}
+
+#recent-transactions {
+    border-collapse: collapse;
+    margin: 0 1em;
+}
+
+#recent-transactions td,
+#recent-transactions th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 30%;
+}
+
+#recent-transactions tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#recent-transactions tr:hover {
+    background-color: #ddd;
+}
+
+#recent-transactions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f85f1e;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #161616;
+}
+
+/* ≤ 600px: Mobile */
+@media (max-width: 600px) {
+    main {
+        font-size: 14px;
+    }
+
+    aside {
+        width: 35%;
+    }
+
+    section {
+        width: 70%;
+    }
+
+    section h3 {
+        font-size: 13px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .graph-item {
+        display: none;
+    }
+}
+
+/* 601px–900px: Tablet */
+/* @media (min-width: 601px) and (max-width: 900px) { } */
+
+/* 901px–1200px: Small desktop */
+/* @media (min-width: 901px) and (max-width: 1200px) { } */
+
+/* >1200px: Large screens */
+/* @media (min-width: 1201px) { } */
+
+
+/* @media (max-width: 656px) {
+    
+
+} */

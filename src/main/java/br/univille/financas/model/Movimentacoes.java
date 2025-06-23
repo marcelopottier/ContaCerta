@@ -16,7 +16,9 @@ public class Movimentacoes {
     private BigDecimal valor;
     private LocalDate data;
     private String descricao;
-
+    @Enumerated(EnumType.STRING)
+    private TipoMovimentacao tipo;
+    
     @ManyToOne
     private Categorias categoria;
 
